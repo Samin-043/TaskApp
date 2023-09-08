@@ -1,6 +1,9 @@
-// src/RegistrationForm.js
 
 import React, { useState } from 'react';
+import { Button, Card, Form, FormLabel } from 'react-bootstrap';
+import './Registration.css'
+
+
 
 function RegistrationForm() {
   const [formData, setFormData] = useState({
@@ -24,38 +27,51 @@ function RegistrationForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <div>
-        <label>Username:</label>
-        <input
-          type="text"
-          name="username"
-          value={formData.username}
-          onChange={handleChange}
-        />
-      </div>
-      <div>
-        <label>Email:</label>
-        <input
-          type="email"
-          name="email"
-          value={formData.email}
-          onChange={handleChange}
-        />
-      </div>
-      <div>
-        <label>Password:</label>
-        <input
-          type="password"
-          name="password"
-          value={formData.password}
-          onChange={handleChange}
-        />
-      </div>
-      <div>
-        <button type="submit">Register</button>
-      </div>
-    </form>
+
+    <div className="body">
+      <Card className='body'>
+        <Card.Body className='body'>
+          <Form onSubmit={handleSubmit}>
+            <Card>
+              <Card.Body>
+                <div className='mx-auto my-auto'>
+                  <FormLabel >Username:</FormLabel>
+                  <input
+                    type="text"
+                    name="username"
+                    value={formData.username}
+                    onChange={handleChange}
+                  />
+                </div>
+                <div>
+                  <FormLabel>Email:</FormLabel>
+                  <input
+                    type="email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleChange}
+                  />
+                </div>
+                <div>
+                  <FormLabel>Password:</FormLabel>
+                  <input
+                    type="password"
+                    name="password"
+                    value={formData.password}
+                    onChange={handleChange}
+                  />
+                </div>
+                <div>
+                  <Button type="submit">Register</Button>
+                  <Button className='ms-2' href="/src/Component/Registration">Register</Button>
+                </div>
+              </Card.Body>
+            </Card>
+          </Form>
+        </Card.Body >
+      </Card >
+    </div >
+
   );
 }
 

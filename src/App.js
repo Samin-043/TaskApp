@@ -1,13 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
-import Registration from './Component/Registration/Registration';
-
+import SignInForm from './Component/SignIn/SignIn';
+import Head from './Component/Header/Head';
 
 
 function App() {
   return (
     <div className="App">
-      <Registration></Registration>
+      <Head></Head>
+      <SignInForm></SignInForm>
     </div>
   );
 }
