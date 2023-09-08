@@ -63,7 +63,7 @@ function RegistrationForm() {
                 </div>
                 <div>
                   <Button type="submit">Register</Button>
-                  <Button className='ms-2' href="/src/Component/Registration">Register</Button>
+                  <Button className='ms-2' href="/src/Component/SignIn">Register</Button>
                 </div>
               </Card.Body>
             </Card>

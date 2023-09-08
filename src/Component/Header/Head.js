@@ -1,7 +1,7 @@
 import React from 'react';
 import './Head.css'
 import { Container, Nav, NavDropdown, Navbar } from 'react-bootstrap';
-
+import RegistrationForm from '../Registration/Registration';
 
 const Head = () => {
     return (
@@ -13,7 +13,7 @@ const Head = () => {
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="ms-auto">
                             <Nav.Link href="#">CreateTask</Nav.Link>
-                            <Nav.Link href="/src/Component/Registration">Register</Nav.Link>
+                            <Nav.Link href="/src/Component/Registration/Registration.js">Register</Nav.Link>
                             <NavDropdown title="Dropdown" id="basic-nav-dropdown">
                                 <NavDropdown.Item href="#">Profile</NavDropdown.Item>
                             </NavDropdown>

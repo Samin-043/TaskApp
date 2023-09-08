@@ -8,7 +8,6 @@ function App() {
   return (
     <div className="App">
       <Head></Head>
-      <SignInForm></SignInForm>
     </div>
   );
 }
